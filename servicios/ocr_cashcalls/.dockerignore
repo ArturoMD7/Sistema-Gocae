@@ -1,0 +1,6 @@
+ocrcashcall
+ocrcashcall_cuda
+__pycache__
+*.pyc
+.env
+.DS_Store

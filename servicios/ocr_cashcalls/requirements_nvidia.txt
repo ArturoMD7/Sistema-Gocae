@@ -1,0 +1,18 @@
+# CUDA build for the NVIDIA environment. Keep this separate from requirements.txt.
+--extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cu126/
+
+streamlit==1.58.0
+paddleocr==3.6.0
+paddlepaddle-gpu==3.2.0
+paddlex==3.6.1
+opencv-python==4.13.0.92
+pandas==3.0.3
+openpyxl==3.1.5
+PyMuPDF==1.27.2.3
+numpy==2.3.5
+PyYAML==6.0.2
+Pillow==12.2.0
+transformers==4.44.2
+huggingface-hub==0.36.2
+torch>=2.1.0
+safetensors==0.7.0
