@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pemex-primary: #840016;
+  --color-pemex-secondary: #4e091c;
+  --color-pemex-accent: #a50121;
+  --color-pemex-light: #f8f9fa;
+  --color-pemex-greenlight: #308c1d;
+  --color-pemex-green: #193908;
+  --color-pemex-green2: #0a2516;
+  --color-pemex-redlight: #883543;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
