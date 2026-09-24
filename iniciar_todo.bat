@@ -11,7 +11,7 @@ echo Iniciando Microservicio OCR (FastAPI) en el puerto 8001...
 start cmd /k "cd servicios\ocr_cashcalls && call venv-ocr\Scripts\activate && uvicorn main:app --port 8001 --reload"
 
 echo Iniciando Frontend (Vue) en el puerto 5173...
-start cmd /k "cd frontend && npm run dev"
+start cmd /k "cd frontend && pnpm dev"
 
 echo.
 echo Todos los servicios han sido lanzados en ventanas separadas.
