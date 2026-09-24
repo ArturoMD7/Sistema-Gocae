@@ -12,6 +12,7 @@ import RegisterPage from '../pages/auth/RegisterPage.vue'
 import EditUserPage from '../pages/auth/EditUserPage.vue'
 import UserInfoPage from '../pages/auth/UserInfoPage.vue'
 import SettingsPage from '../pages/auth/SettingsPage.vue'
+import InvoiceUploader from '../pages/ocr/InvoiceUploader.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -41,6 +42,12 @@ const router = createRouter({
           path: 'contracts/:id/edit',
           name: 'contract-edit',
           component: ContractEditPage,
+          meta: { requiresAdmin: true }
+        },
+        {
+          path: 'ocr/invoices',
+          name: 'ocr-invoices',
+          component: InvoiceUploader,
           meta: { requiresAdmin: true }
         },
         {

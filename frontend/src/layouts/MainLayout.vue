@@ -47,6 +47,16 @@ const handleLogout = () => {
             </router-link>
           </li>
 
+          <!-- OCR Menu -->
+          <li class="m-[8px_12px]" v-if="authStore.isAdmin">
+            <router-link :to="{ name: 'ocr-invoices' }" class="flex items-center text-[#555] no-underline p-[14px_16px] rounded-[8px] transition-all duration-200 w-full text-left font-[inherit] text-[0.95rem] whitespace-nowrap hover:bg-[rgba(30,91,79,0.08)] hover:text-[#1e5b4f]" active-class="!bg-[#1e5b4f] !text-white shadow-[0_4px_6px_rgba(30,91,79,0.2)]" :class="!isSidebarExpanded ? 'justify-center !px-0' : ''">
+              <span class="text-[1.3rem] min-w-[24px] flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
+                <Database class="w-5 h-5" />
+              </span>
+              <span class="ml-[16px] font-medium transition-all duration-300" :class="isSidebarExpanded ? 'opacity-100' : 'opacity-0 hidden'">Extraer Facturas</span>
+            </router-link>
+          </li>
+
           <!-- Users Menu (Admin Only) -->
           <li v-if="authStore.isAdmin" class="m-[8px_12px]">
             <router-link :to="{ name: 'users' }" class="flex items-center text-[#555] no-underline p-[14px_16px] rounded-[8px] transition-all duration-200 w-full text-left font-[inherit] text-[0.95rem] whitespace-nowrap hover:bg-[rgba(30,91,79,0.08)] hover:text-[#1e5b4f]" active-class="!bg-[#1e5b4f] !text-white shadow-[0_4px_6px_rgba(30,91,79,0.2)]" :class="!isSidebarExpanded ? 'justify-center !px-0' : ''">
