@@ -79,7 +79,16 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
+DATABASES_SQLITE = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+DATABASES = DATABASES_SQLITE
+
+# Configuración anterior de SQL Server (descomentar para regresar a MSSQL)
+OLD_DATABASES = {
     'default': {
         'ENGINE': 'mssql',
         'NAME': 'SistemaGocae',
