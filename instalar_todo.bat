@@ -30,6 +30,7 @@ echo.
 
 echo [3/3] Instalando dependencias del Frontend (Vue)...
 cd frontend
+call npm install -g pnpm
 call pnpm install
 cd ..
 echo Frontend listo!
